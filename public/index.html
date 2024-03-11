@@ -16,15 +16,13 @@
                 <form action="" id="enviarDatos">
                     <div class="card">
                         <div class="card-header">
-                            <h1>Nuevo usuario</h1>
+                            <h1>Ingresa tu mensaje</h1>
                         </div>
                         <div class="card-body">
-                            <input class="form-control mb-3" type="text" id="nombre" placeholder="Nombre" autofocus>  
-                            <input class="form-control mb-3" type="text" id="usuario" placeholder="usuario" >                  
-                            <input class="form-control mb-3" type="text" id="password" placeholder="password">                        
+                            <input class="form-control mb-3" type="text" id="mensaje" placeholder="Mensaje" autofocus>                         
                         </div>
                         <div class="card-footer">
-                            <button class="form-control btn btn-primary mb-3" type="submit">Guardar usuarios</button>
+                            <button class="form-control btn btn-primary mb-3" type="submit">Enviar</button>
                             <button class="form-control btn btn-secondary" type="reset">Borrar datos</button>
                         </div>
                     </div>
@@ -32,23 +30,23 @@
             </div>
             <div class="col-8">
                 <table class="table hoover">
+                    <p>selecciona una opcion:</p>
+                    <li>1: Consultar saldo</li>
+                    <li>2: Realizar transferencia</li>
+                    <li>3: Cambiar contraseña</li>
+                    <li>4: Ver últimos movimientos</li>
+                    <li>5: Solicitar estado de cuenta</li>                    
                     <thead>
                         <tr>
-                            <th>Id</th>
-                            <th>Nombre</th>
-                            <th>Usuario</th>
-                            <th>Password</th>
+                            <th>Mensaje</th>
                         </tr>
                     </thead>
                     <tbody id="datos">
                         <tr>
-                            <td>100</td>
-                            <td>User</td>
-                            <td>user</td>
-                            <td>abc</td>
                         </tr>
                     </tbody>
                 </table>
+                
             </div>
         </div>
     </div>

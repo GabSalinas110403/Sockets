@@ -7,9 +7,13 @@ socket.on("saludo", (saludo)=>{
 var enviarDatos = document.getElementById("enviarDatos");
 enviarDatos.addEventListener("submit", (e) => {
     e.preventDefault();
-    var nombre = document.getElementById("nombre").value;
+    var mensaje = document.getElementById("mensaje").value;
     var datos=document.getElementById("datos");
-    socket.emit("nombre", nombre);
+    socket.emit("mensaje", mensaje);
+
+
+
+
     socket.on("saludo", (saludo) =>{
         //console.log(saludo);
         datos.innerHTML=saludo;
